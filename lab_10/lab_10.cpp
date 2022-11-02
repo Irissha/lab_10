@@ -6,7 +6,8 @@ void print(int*, int&);
 int main()
 {
 	locale::global(locale(""));
-	srand(unsigned(time(NULL)));
+	srand(unsigned(time(NULL)));  /*srand() используется для инициализации генераторов случайных чисел.
+	Функция srand() задает начальную точку для создания серии псевдослучайных целых чисел.*/
 	int size = rand() % 5 + 3;
 	int* a = NULL, * t = NULL;
 	a = new int[size];
